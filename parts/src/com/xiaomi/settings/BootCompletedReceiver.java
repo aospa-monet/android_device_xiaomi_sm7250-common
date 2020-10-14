@@ -33,7 +33,6 @@ import com.xiaomi.settings.thermal.ThermalUtils;
 import com.xiaomi.settings.utils.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
     private static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
