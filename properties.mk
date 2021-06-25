@@ -156,6 +156,9 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.lpa=true
 
+PRODUCT_SYSTEM_PROPERTIES += \
+persist.vendor.btstack.enable.twsplus=true
+
 # Blur
 PRODUCT_SYSTEM_PROPERTIES += \
 ro.surface_flinger.supports_background_blur=1 \
