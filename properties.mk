@@ -157,7 +157,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.lpa=true
 
 PRODUCT_SYSTEM_PROPERTIES += \
-persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplus=true \
+persist.vendor.bt.a2dp.hal.implementation=true
 
 # Blur
 PRODUCT_SYSTEM_PROPERTIES += \
