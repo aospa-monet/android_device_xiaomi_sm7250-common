@@ -462,6 +462,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     media \
     nfc \
+    perf \
     telephony
 
 # RIL
