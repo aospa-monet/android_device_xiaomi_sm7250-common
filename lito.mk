@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-util \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.1-impl \
