@@ -171,9 +171,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_VENDOR := xiaomi
 BOARD_USES_QCOM_HARDWARE := true
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
-
 # Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
