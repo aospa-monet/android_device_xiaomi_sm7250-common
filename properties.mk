@@ -386,11 +386,7 @@ ro.lmk.swap_util_max=100
 
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
-debug.stagefright.ccodec=1 \
 debug.stagefright.omx_default_rank=0
-
-PRODUCT_SYSTEM_PROPERTIES += \
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
 PRODUCT_SYSTEM_PROPERTIES += \
