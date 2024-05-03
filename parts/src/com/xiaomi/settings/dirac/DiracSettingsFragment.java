@@ -17,7 +17,7 @@
 package com.xiaomi.settings.dirac;
 
 import android.os.Bundle;
-import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.util.Log;
 
 import androidx.preference.ListPreference;
@@ -27,11 +27,12 @@ import androidx.preference.PreferenceFragment;
 import androidx.preference.SwitchPreference;
 
 import com.android.settingslib.widget.MainSwitchPreference;
+import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import com.xiaomi.settings.R;
 
 public class DiracSettingsFragment extends PreferenceFragment implements
-        Preference.OnPreferenceChangeListener, CompoundButton.OnCheckedChangeListener {
+        OnPreferenceChangeListener, OnMainSwitchChangeListener {
 
     private static final String TAG = "DiracSettingsFragment";
     private static final String PREF_ENABLE = "dirac_enable";
@@ -103,7 +104,7 @@ public class DiracSettingsFragment extends PreferenceFragment implements
     }
 
     @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+    public void onSwitchChanged(Switch switchView, boolean isChecked) {
         mSwitchBar.setChecked(isChecked);
 
         if (mDiracUtils == null) return;
