@@ -34,12 +34,12 @@ public class PocketPreferenceActivity extends CollapsingToolbarBaseActivity {
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.widget.R.id.content_frame);
         PocketPreferenceFragment pocketPreferenceFragment;
         if (fragment == null) {
             pocketPreferenceFragment = new PocketPreferenceFragment();
             getFragmentManager().beginTransaction()
-                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, pocketPreferenceFragment)
+                    .add(com.android.settingslib.widget.R.id.content_frame, pocketPreferenceFragment)
                     .commit();
         }
     }

@@ -30,12 +30,12 @@ public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
         super.onCreate(savedInstanceState);
 
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.widget.R.id.content_frame);
         ClearSpeakerFragment clearSpeakerFragment;
         if (fragment == null) {
             clearSpeakerFragment = new ClearSpeakerFragment();
             getFragmentManager().beginTransaction()
-                    .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, clearSpeakerFragment)
+                    .add(com.android.settingslib.widget.R.id.content_frame, clearSpeakerFragment)
                     .commit();
         }
     }

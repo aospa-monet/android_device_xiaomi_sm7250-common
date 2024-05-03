@@ -32,11 +32,11 @@ public class HBMActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.collapsingtoolbar.R.id.content_frame);
+        Fragment fragment = getFragmentManager().findFragmentById(com.android.settingslib.widget.R.id.content_frame);
         if (fragment == null) {
             mHBMFragment = new HBMFragment();
             getFragmentManager().beginTransaction()
-                .add(com.android.settingslib.collapsingtoolbar.R.id.content_frame, mHBMFragment)
+                .add(com.android.settingslib.widget.R.id.content_frame, mHBMFragment)
                 .commit();
         } else {
             mHBMFragment = (HBMFragment) fragment;
