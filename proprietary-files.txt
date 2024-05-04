@@ -725,6 +725,9 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# Vibrator firmware
+vendor/firmware/osc_rtp_24K_5s.bin
+
 # VPP
 vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
