@@ -142,22 +142,19 @@ ro.audio.monitorRotation=true
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
-bluetooth.device.class_of_device=90,2,12 \
-bluetooth.hardware.power.operating_voltage_mv=3300 \
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-persist.bluetooth.a2dp_offload.disabled=false \
-persist.bluetooth.sbc_hd_higher_bitrate=1 \
-persist.vendor.bt.aac_frm_ctl.enabled=true \
-persist.vendor.bt.aac_vbr_frm_ctl.enabled=true \
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
-persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
+persist.vendor.qcom.bluetooth.enable.swb=true \
+persist.vendor.qcom.bluetooth.enable.swbpm=true \
 persist.vendor.qcom.bluetooth.scram.enabled=false \
-persist.vendor.qcom.bluetooth.soc=cherokee \
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-ro.bluetooth.a2dp_offload.supported=true \
-ro.vendor.bluetooth.wipower=false \
-vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.vendor.btstack.enable.lpa=true
 
 # Blur
 PRODUCT_SYSTEM_PROPERTIES += \
