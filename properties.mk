@@ -513,3 +513,6 @@ wifi.aware.interface=wifi-aware0
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.device_config.runtime_native.usap_pool_enabled=true \
 zygote.critical_window.minute=10
+
+# Disable ADB authentication
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
