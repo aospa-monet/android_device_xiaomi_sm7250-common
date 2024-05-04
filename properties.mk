@@ -178,10 +178,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 ro.crypto.allow_encrypt_override=true \
 ro.crypto.volume.filenames_mode=aes-256-cts
 
-# CNE
-PRODUCT_SYSTEM_PROPERTIES += \
-persist.vendor.cne.feature=1
-
 # Dalvik
 PRODUCT_SYSTEM_PROPERTIES += \
 dalvik.vm.dex2oat64.enabled=true \
@@ -280,10 +276,6 @@ ro.surface_flinger.set_touch_timer_ms?=200 \
 ro.surface_flinger.set_display_power_timer_ms?=1000 \
 ro.surface_flinger.use_content_detection_for_refresh_rate=true \
 vendor.display.defer_fps_frame_count?=2
-
-# DPM
-PRODUCT_SYSTEM_PROPERTIES += \
-persist.vendor.dpm.feature=1
 
 # DRM
 PRODUCT_VENDOR_PROPERTIES += \
@@ -391,8 +383,7 @@ ro.netflix.bsp_rev=Q7250-19133-1
 
 # Netmgr
 PRODUCT_SYSTEM_PROPERTIES += \
-persist.vendor.data.iwlan.enable=true \
-persist.vendor.data.mode=concurrent
+persist.vendor.data.iwlan.enable=true
 
 # NFC
 PRODUCT_VENDOR_PROPERTIES += \
@@ -417,23 +408,16 @@ ro.vendor.qti.core_ctl_min_cpu=2
 
 # Radio
 PRODUCT_VENDOR_PROPERTIES += \
-persist.radio.multisim.config=dsds \
 persist.rcs.supported=1 \
 persist.vendor.data.iwlan.enable=true \
-persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.vendor.radio.arfcn_test_mode=3 \
 persist.vendor.radio.bar_fake_gcell=1 \
-persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.data_con_rprt=1 \
 persist.vendor.radio.data_ltd_sys_ind=1 \
 persist.vendor.radio.efssync=true \
-persist.vendor.radio.enableadvancedscan=true \
 persist.vendor.radio.force_on_dc=true \
 persist.vendor.radio.ignore_dom_time=10 \
-persist.vendor.radio.procedure_bytes=SKIP \
 persist.vendor.radio.process_sups_ind=1 \
-persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
 persist.vendor.radio.uicc_se_enabled=true \
 vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
 ro.com.android.dataroaming=false
@@ -441,7 +425,6 @@ ro.com.android.dataroaming=false
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.radio.snapshot_enabled=0 \
 persist.radio.snapshot_timer=0 \
-ro.telephony.default_network=33,33 \
 ro.telephony.iwlan_operation_mode=default
 
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -455,7 +438,6 @@ ro.ril.disable.power.collapse=0 \
 ro.ril.fast.dormancy.rule=1 \
 ro.ril.fast.dormancy.timeout=3 \
 ro.mot.eri.losalert.delay=100 \
-ro.vendor.use_data_netmgrd=true \
 ro.vold.umsdirtyratio=20 \
 power.saving.mode=1
 
