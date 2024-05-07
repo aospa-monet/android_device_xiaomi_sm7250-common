@@ -414,7 +414,7 @@ service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanage
 
 service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     override
-    class early_hal
+    class hal
     user nfc
     group nfc
     disabled
