@@ -122,11 +122,11 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM_IAS=1
 TARGET_KERNEL_CLANG_COMPILE := true
-# TARGET_KERNEL_CONFIG := vendor/debugfs.config
 TARGET_KERNEL_CLANG_VERSION := neutron
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-neutron
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_KERNEL_CONFIG := milito_defconfig vendor/debugfs.config
+TARGET_KERNEL_CONFIG := milito_defconfig
+KERNEL_FRAGMENT_CONFIG := vendor/debugfs.config
 TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
 
