@@ -97,13 +97,13 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
-    <name>android.hardware.nfc</name>
-       <version>1</version>
-    <interface>
-        <name>INfc</name>
-        <instance>default</instance>
-    </interface>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.nfc</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.radio</name>
@@ -382,22 +382,6 @@
         <version>1.1</version>
         <interface>
             <name>IGoogleBattery</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpese</name>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEse</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.nxp.nxpnfc</name>
-        <version>2.0</version>
-        <interface>
-            <name>INxpNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
