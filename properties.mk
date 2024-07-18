@@ -148,18 +148,25 @@ persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
+persist.vendor.qcom.bluetooth.enable.splita2dp=true \
 persist.vendor.qcom.bluetooth.enable.swb=true \
 persist.vendor.qcom.bluetooth.enable.swbpm=true \
 persist.vendor.qcom.bluetooth.scram.enabled=false \
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee \
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+persist.vendor.bluetooth.modem_nv_support=true \
+ro.vendor.bluetooth.wipower=false \
+vendor.qcom.bluetooth.soc=cherokee
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.lpa=true
 
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.vendor.btstack.enable.twsplus=true \
-persist.vendor.btstack.enable.twsplussho=true
-persist.vendor.bt.a2dp.hal.implementation=true
+persist.vendor.btstack.enable.twsplussho=true \
+persist.vendor.bt.a2dp.hal.implementation=true \
+persist.bluetooth.bqr.event_mask=14 \
+persist.bluetooth.bqr.min_interval_ms=500
 
 # Blur
 PRODUCT_SYSTEM_PROPERTIES += \

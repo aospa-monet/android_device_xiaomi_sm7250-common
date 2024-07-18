@@ -116,7 +116,17 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl \
+    libbluetooth_audio_session \
+    libbthost_if_sink
+
+TARGET_USE_QTI_BT_STACK := true
+
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor:32 \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Board
 TARGET_BOARD_PLATFORM := lito
