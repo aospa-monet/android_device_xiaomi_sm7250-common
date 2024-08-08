@@ -499,11 +499,9 @@ vendor.usb.dpl.inst.name=dpl \
 vendor.usb.qdss.inst.name=qdss \
 vendor.usb.rmnet.func.name=gsi \
 vendor.usb.rmnet.inst.name=rmnet \
-vendor.usb.rndis.func.name=gsi
-
-PRODUCT_ODM_PROPERTIES += \
-    sys.usb.mtp.batchcancel=1 \
-    vendor.usb.use_ffs_mtp=1
+vendor.usb.rndis.func.name=gsi \
+vendor.usb.use_ffs_mtp=0 \
+vendor.usb.use_gadget_hal=0
 
 # Volume steps
 PRODUCT_VENDOR_PROPERTIES += \
