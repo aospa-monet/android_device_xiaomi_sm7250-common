@@ -505,9 +505,6 @@ PRODUCT_ODM_PROPERTIES += \
     sys.usb.mtp.batchcancel=1 \
     vendor.usb.use_ffs_mtp=1
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.usb.uvc.enabled=true
-
 # Volume steps
 PRODUCT_VENDOR_PROPERTIES += \
 ro.config.media_vol_steps=30 \
