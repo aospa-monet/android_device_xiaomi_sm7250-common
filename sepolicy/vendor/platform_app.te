@@ -8,6 +8,7 @@ allow platform_app {
     nfc_service
     }:service_manager find;
 allow platform_app {
+    audio_config_prop
     vendor_audio_prop
     vendor_display_prop
     vendor_default_prop
